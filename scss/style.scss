@@ -1,0 +1,105 @@
+@mixin parallax-background($file) {
+  background: url($file) no-repeat center center fixed;
+  @include background-size(cover);
+}
+
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+$mustard-color: #f7690a;
+$gray-color: #dd7c36;
+$beige-color: #edddc4;
+
+@mixin background-size($size){
+    background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+ }
+
+#florence {
+  height: $parallax-height;
+  @include parallax-background("http://www.ilguelfobianco.it/wp-content/uploads/2016/05/home.jpg");
+}
+
+#duomo {
+  height: $parallax-height;
+  @include parallax-background("http://www.lastminute.com/c/content/dam/site_gb/CityBreaks/destinationPages/florence-1155x510.jpg");
+}
+
+#florence {
+  width: 100%;
+  height: $parallax-height;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+	h1{
+    background: rgb(197,219,240); // IE-9 
+    background: rgba(197,219,240, 0.75);
+		  text-transform: uppercase;
+	  	font-family: serif;
+      font-weight: bold;
+	  	letter-spacing: 0.06em;
+	  	font-size: 3em;
+	  	color: $mustard-color;
+	  	text-align: center;
+      transform: translateZ(-0.025px);
+	}
+  h2{
+     background: rgb(197,219,240); // IE-9 
+    background: rgba(197,219,240, 0.85);
+    font-family: Montserrat;
+    font-weight: bold;
+    color: $mustard-color;
+    font-size: 2.5em;
+    text-align: center;
+    transform: translateZ(-0.25px);
+  }
+}
+
+#duomo{
+   width: 100%;
+  height: $parallax-height;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  h3{
+     background: rgb(197,219,240); // IE-9 
+    background: rgba(197,219,240, 0.85);
+    text-transform: uppercase;
+	  font-family: serif;
+    font-weight: bold;
+    color: $mustard-color;
+    font-size: 4em;
+    text-align: center;
+    transform: translateZ(-1px);
+  }
+  h6{
+    background: rgb(197,219,240); // IE-9 
+    background: rgba(197,219,240, 0.85);
+    font-family: serif;
+    font-weight: bold;
+    color: $mustard-color;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+p {
+	padding: 5%;
+	margin: $center-margin;
+	text-align: center;
+	font-size: 1.25em;
+	line-height: 1.5;
+  color: $gray-color;
+  background-color: $beige-color;
+  }
+
