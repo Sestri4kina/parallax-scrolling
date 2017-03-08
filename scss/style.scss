@@ -25,12 +25,12 @@ body {
 
 #florence {
   height: $parallax-height;
-  @include parallax-background("img/home.jpg");
+  @include parallax-background("/images/home.jpg");
 }
 
 #duomo {
   height: $parallax-height;
-  @include parallax-background("img/florence.jpg");
+  @include parallax-background("/images/florence.jpg");
 }
 
 #florence {
@@ -55,7 +55,7 @@ body {
   h2{
      background: rgb(197,219,240); // IE-9
     background: rgba(197,219,240, 0.85);
-    font-family: Montserrat;
+    font-family: serif;
     font-weight: bold;
     color: $mustard-color;
     font-size: 2.5em;

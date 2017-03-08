@@ -6,7 +6,7 @@ body {
 
 #florence {
   height: 100vh;
-  background: url("img/home.jpg") no-repeat center center fixed;
+  background: url("/images/home.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 #duomo {
   height: 100vh;
-  background: url("img/florence.jpg") no-repeat center center fixed;
+  background: url("/images/florence.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -45,7 +45,7 @@ body {
 #florence h2 {
   background: #c5dbf0;
   background: rgba(197, 219, 240, 0.85);
-  font-family: Montserrat;
+  font-family: serif;
   font-weight: bold;
   color: #f7690a;
   font-size: 2.5em;
@@ -84,7 +84,7 @@ body {
 
 p {
   padding: 5%;
-  margin: 0px auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 1.25em;
   line-height: 1.5;
